@@ -12,6 +12,7 @@ export default function RecentDonations({donations}) {
 
    {donations.map((person)=> {
     return
+    
     <li><span>{person.name} donated ${person.amount}</span>{person.caption}</li>
 
    })}

@@ -43,16 +43,16 @@ function App() {
 
 
 
-  function handleProgress (donations, event) {
-    event.preventDefault()
+  // function handleProgress (donations, event) {
+  //   event.preventDefault()
 
-    let sum = 0
-    donations.forEach(amount => {
-     sum += donations[0].amount
+  //   let sum = 0
+  //   donations.forEach(amount => {
+  //    sum += donations.amount
 
-    })
-    return sum
-  }
+  //   })
+  //   return sum
+  // }
 
 
   return (
@@ -65,7 +65,7 @@ function App() {
         
         </section>
         <section className="">
-          <Progress progress= {handleProgress} targetAmount = {targetAmount}/>
+          <Progress donations= {donations} targetAmount = {targetAmount}/>
          <DonationForm donations = {donations}/>
         </section>
       </main>
